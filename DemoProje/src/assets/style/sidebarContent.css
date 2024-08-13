@@ -1,0 +1,26 @@
+/* App.css */
+
+.sidebar {
+  position: fixed;
+}
+
+.content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease; /* Yumuşak geçiş için */
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 80px; /* Mobil görünümde sidebar kapandığında içerik */
+  }
+  .sidebar {
+    position: absolute;
+    z-index: 1000;
+  }
+}
+
+.menuName{ 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
