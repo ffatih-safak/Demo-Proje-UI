@@ -7,13 +7,13 @@ import storage from 'redux-persist/lib/storage';
 import { loginReducer } from './slices/loginSlice';
 import { toastrReducer } from './slices/toastrSlice';
 
-// redux-persist özelliği ile localde tutuyor güvenlik sorunu oluşturur mu
+
 const rootReducer = combineReducers({
   logins: loginReducer,
   toastrs: toastrReducer
 });
 
-//Bu kısımda sadece kalıcı olarak tutmak istediğimiz store tutuyoruz
+
 const persistConfig = {
   key: 'root',
   storage,
